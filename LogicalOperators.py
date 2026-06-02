@@ -28,6 +28,30 @@ else:
     print("❤️❤️")
 
 ##  Terenary Operators -> x if condition else y
+## A one-line shortcut for the if-else statement print or assign one of two values based on a condition
+
 num=45
 res="Even" if num%2==0 else "ODD"
 print(res)
+
+#Maximum of numbers
+a=8
+b=3
+max_num = a if a>b else b
+print(max_num)
+
+#Minimum of numbers
+x=7
+y=4
+min_num=x if x<y else y
+print(min_num)
+
+#Adult or not
+age=53
+status="Adult" if age>=18 else "Child"
+print(status)
+
+#Temperature based condition
+temper=35
+weather="Hot" if temper>30 else "Cold"
+print(weather)
