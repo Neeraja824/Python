@@ -139,11 +139,36 @@
 #     print(f"{n} is not a prime number")
 
 #Print all prime numbers between 1 and N.
-n = int(input("Enter a number: "))
-for num in range(2, n + 1):
-    count = 0
-    for i in range(1, num + 1):
-        if num % i == 0:
-            count += 1
-    if count == 2:
-        print(num, end=" ")
+# n = int(input("Enter a number: "))
+# for num in range(2, n + 1):
+#     count = 0
+#     for i in range(1, num + 1):
+#         if num % i == 0:
+#             count += 1
+#     if count == 2:
+#         print(num, end=" ")
+
+# Count down time program
+# import time 
+# my_time=int(input("Enter time in seconds: "))
+# # for x in reversed(range(0,my_time)):
+# for x in range(my_time,0,-1):
+#     seconds=x%60
+#     minutes=int(x/60)%60
+#     hours=int(x/3600)
+#     print(f"{hours:02}:{minutes:02}:{seconds:02}")
+#     time.sleep(1)
+# print("Hello Aditya!")
+
+# Nested Loop = A loop within another loop (outer, inner)
+#     outer loop:
+#          inner loop:
+
+# rows=int(input("Enter number of rows: "))
+# cols=int(input("Enter number of cols: "))
+# symbol=input("Enter a symbol: ")
+# for x in range(rows):
+#     for y in range(cols):
+#         print(symbol,end=" ")
+#     print()
+
