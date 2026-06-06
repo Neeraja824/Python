@@ -83,8 +83,47 @@
 #         print(food,end=" ")
 #     print()
 
-num_pad=((1,2,3),(4,5,6),(7,8,9),("*",0,"#"))
-for row in num_pad:
-    for num in row:
-        print(num,end=" ")
-    print()
+# num_pad=((1,2,3),(4,5,6),(7,8,9),("*",0,"#"))
+# for row in num_pad:
+#     for num in row:
+#         print(num,end=" ")
+#     print()
+
+# Dictionary = A collection of {key:value} pairs. Ordered and changeable and no duplicates
+
+capitals={"USA": "Washington  D.C",
+          "India": "New Delhi",
+          "China": "Beijing",
+          "Russia": "Moscow"}
+# print(dir(capitals))
+# print(help(capitals))
+# print(capitals.get("Japan"))
+
+# if capitals.get("Russia"):
+#     print("That capital exists!")
+# else:
+#     print("That capital doesn't exists!")
+
+# capitals.update({"Germany": "Berlin"})
+# capitals.update({"USA": "Detroit"})
+# capitals.pop("China")
+# capitals.popitem()
+# capitals.clear()
+
+# keys=capitals.keys()
+# values=capitals.values()
+# print(keys)
+# print(values)
+
+# for key in capitals.keys():
+#     print(key)
+
+# for value in capitals.values():
+#     print(value)
+
+# items=capitals.items()
+# print(items)
+# # print(capitals)
+
+for key,value in capitals.items():
+    print(f"{key} : {value}")
