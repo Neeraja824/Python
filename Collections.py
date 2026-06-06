@@ -50,24 +50,41 @@
 
 #Shopping cart program
 
-foods=[]
-prices=[]
-total=0
+# foods=[]
+# prices=[]
+# total=0
 
-while True:
-    food=input("Enter a food to buy (q to quit): ")
-    if food.lower()=="q":
-        break
-    else:
-        price=float(input(f"Enter the price of a {food}: $"))
-        foods.append(food)
-        prices.append(price)
+# while True:
+#     food=input("Enter a food to buy (q to quit): ")
+#     if food.lower()=="q":
+#         break
+#     else:
+#         price=float(input(f"Enter the price of a {food}: $"))
+#         foods.append(food)
+#         prices.append(price)
 
-print("--------YOUR CART--------")
-for food in foods:
-    print(food,end=" ")
+# print("--------YOUR CART--------")
+# for food in foods:
+#     print(food,end=" ")
 
-for price in prices:
-    total+=price
-print()
-print(f"Your total is: ${total}")
+# for price in prices:
+#     total+=price
+# print()
+# print(f"Your total is: ${total}")
+
+# Two-Dimensional (2D) Lists: -> A collection is made of number of collections
+
+# groceries=[["apple","orange","mango","cherry"],
+#            ["Tomato","Carrot","Potato"],
+#            ["Chicken","Mutton","Fish"]]
+# # print(groceries[0][3])
+# for collection in groceries:
+#     for food in collection:
+#         print(food,end=" ")
+#     print()
+
+num_pad=((1,2,3),(4,5,6),(7,8,9),("*",0,"#"))
+for row in num_pad:
+    for num in row:
+        print(num,end=" ")
+    print()
