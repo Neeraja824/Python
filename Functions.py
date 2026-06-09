@@ -45,7 +45,10 @@
 # print(full_name)
 
 # Types of Arguments
-# 1.positional 2.default 3.keyword 4.arbitrary
+# 1.positional 
+# 2.default 
+# 3.keyword 
+# 4.arbitrary
 
 # Default Arguments = A defsult value for certain parameters.
                     # default is used when that argument is omitted 
