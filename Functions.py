@@ -78,7 +78,40 @@
 #"sep" is an keyword
 # print("1","2","3","4","5",sep="*")
 
-def get_phone(country,area,first,last):
-    return f"{country}-{area}-{first}-{last}"
-phone_num=get_phone(country=+91,area=824,first=779,last=4125)
-print(phone_num)
+# def get_phone(country,area,first,last):
+#     return f"{country}-{area}-{first}-{last}"
+# phone_num=get_phone(country=+91,area=824,first=779,last=4125)
+# print(phone_num)
+
+# Arbitrary Arguments = (*args) Allows you to pass multiple non-key arguments
+#                       (**kwargs) Allows you to pass multiple keyword-arguments
+#                        * unpacking operator
+
+# def add(*args): 
+#     total=0
+#     for arg in args:
+#         total+=arg
+#     return total
+#     # print(type(args)) --> tuple type
+# print(add(2,3,7,5,4))
+
+# def display_name(*args):
+#     for arg in args:
+#         print(arg,end=" ")
+# display_name("Dr.","John","Doe","IIT")
+
+# def print_address(**kwargs):
+#     for key,value in kwargs.items():
+#         print(f"{key} : {value}")
+#     # print(type(kwargs)) --> Dictionary type
+# print_address(street="Ambedhkar", city="Yeleswaram", state="AndhraPradesh", pin="533429")
+
+def shipping_label(*args,**kwargs):
+    for arg in args:
+        print(arg,end=" ")
+    print()
+    print(f"{kwargs.get('street')}")
+    print(f"{kwargs.get('apt-no')}")
+    for key,value in kwargs.items():
+        print(f"{key} : {value}")
+shipping_label("Dr.","John","Doe","IIT",street="Ambedhkar",city="Yeleswaram",state="AP",code="533429")
