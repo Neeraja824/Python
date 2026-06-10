@@ -91,10 +91,10 @@
 
 # Dictionary = A collection of {key:value} pairs. Ordered and changeable and no duplicates
 
-capitals={"USA": "Washington  D.C",
-          "India": "New Delhi",
-          "China": "Beijing",
-          "Russia": "Moscow"}
+# capitals={"USA": "Washington  D.C",
+#           "India": "New Delhi",
+#           "China": "Beijing",
+#           "Russia": "Moscow"}
 # print(dir(capitals))
 # print(help(capitals))
 # print(capitals.get("Japan"))
@@ -125,5 +125,5 @@ capitals={"USA": "Washington  D.C",
 # print(items)
 # # print(capitals)
 
-for key,value in capitals.items():
-    print(f"{key} : {value}")
+# for key,value in capitals.items():
+#     print(f"{key} : {value}")
