@@ -4,7 +4,7 @@ def spin_row():
     symbols=["🍒", "🍉", "🍋", "🔔", "⭐"]
     return [random.choice(symbols) for _ in range(3)]
 
-def print_row():
+def print_row(row):
     print("|".join(row)) 
 
 def get_payout():
